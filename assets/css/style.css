@@ -1,6 +1,10 @@
 :root {
   --color-orange: #fe6900;
   --color-link: white;
+  --color-white: white;
+  --color-discount: red;
+  --color-sostenibile: green;
+  --color-like: red;
 }
 
 * {
@@ -30,9 +34,9 @@ ul {
   background-color: rgba(255, 54, 54, 0.212);
 }
 
-.card {
+/* .card {
   min-height: 700px;
-}
+} */
 
 /* UTILS */
 .container {
@@ -66,26 +70,69 @@ ul {
 .card {
   flex-grow: 1;
   position: relative;
+  cursor: pointer;
 }
 
-.card .img-wrapper {
-  height: 90%;
+.card .img-wrapper img {
+  width: 100%;
+  max-height: 700px;
+}
+
+.card .img-wrapper.back {
+  display: none;
+}
+
+.card:hover .img-wrapper.back {
+  display: block;
+}
+
+.card:hover .img-wrapper {
+  display: none;
+}
+
+.card .info p {
+  font-size: .8rem;
+}
+
+.card .info p span:first-child {
+  color: var(--color-discount);
+  font-weight: bold;
 }
 
 .card .discount {
   height: 20px;
   position: absolute;
   left: 0;
-  bottom: 10%;
-  /*DEBUG*/
+  bottom: 15%;
+}
+
+.card .discount span {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.card .discount span:first-child {
+  background-color: var(--color-discount);
+}
+
+.card .discount span:last-child {
+  background-color: var(--color-sostenibile);
 }
 
 .card .like {
-  width: 50px;
-  height: 50px;
   position: absolute;
   top: 10px;
   right: 0;
+  padding: 10px;
+  font-size: 1.5rem;
+  background-color: var(--color-white);
+  cursor: pointer;
+}
+
+.card .like:hover {
+  color: var(--color-like);
 }
 
 /* SPECIFIC */
