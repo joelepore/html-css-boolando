@@ -59,3 +59,12 @@ header .menu {
 main {
   padding: 3rem 0;
 }
+
+footer .info,
+footer .social {
+  flex-grow: 1;
+}
+
+footer .container {
+  padding: 2rem 0;
+}
