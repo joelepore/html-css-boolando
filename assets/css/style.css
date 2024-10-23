@@ -89,6 +89,11 @@ ul {
   font-weight: bold;
 }
 
+.card .info p span:last-child {
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
 .card .discount {
   height: 20px;
   position: absolute;
