@@ -94,25 +94,25 @@ ul {
   text-decoration: line-through;
 }
 
-.card .discount {
-  height: 20px;
+.card>.discount {
   position: absolute;
   left: 0;
   bottom: 15%;
 }
 
-.card .discount span {
+.card .discount .badge {
   color: white;
   font-size: 0.8rem;
   font-weight: bold;
   padding: 5px;
+  display: inline-block;
 }
 
-.card .discount span:first-child {
+.card .discount .badge.discount {
   background-color: var(--color-discount);
 }
 
-.card .discount span:last-child {
+.card .discount .badge.tag {
   background-color: var(--color-sostenibile);
 }
 
